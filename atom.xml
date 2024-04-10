@@ -6,7 +6,7 @@
   <link href="https://495fd.vercel.app/atom.xml" rel="self"/>
   
   <link href="https://495fd.vercel.app/"/>
-  <updated>2024-01-29T14:52:36.631Z</updated>
+  <updated>2024-04-10T15:12:08.030Z</updated>
   <id>https://495fd.vercel.app/</id>
   
   <author>
@@ -17,18 +17,62 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>XSS</title>
+    <link href="https://495fd.vercel.app/posts/4a17b156.html"/>
+    <id>https://495fd.vercel.app/posts/4a17b156.html</id>
+    <published>2024-04-10T14:44:55.266Z</published>
+    <updated>2024-04-10T15:12:08.030Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Docker-安装">Docker 安装</h3><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="keyword">get</span> <span class="keyword">update</span></span><br></pre></td></tr></table></figure><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">sudo</span> apt-<span class="meta">get</span> install apt-transport-https ca-certificates curl software-properties-<span class="meta">common</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https:<span class="regexp">//</span>download.docker.com<span class="regexp">/linux/u</span>buntu/gpg | sudo apt-key add -</span><br></pre></td></tr></table></figure><figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo<span class="built_in"> add-apt-repository </span><span class="string">&quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&quot;</span></span><br></pre></td></tr></table></figure><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="keyword">get</span> <span class="keyword">update</span></span><br></pre></td></tr></table></figure><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> install docker-ce</span><br></pre></td></tr></table></figure><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo systemctl status docker</span></span><br></pre></td></tr></table></figure><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> install docker-compose</span><br></pre></td></tr></table></figure><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="comment">--version</span></span><br></pre></td></tr></table></figure><h3 id="靶场安装">靶场安装</h3><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">docker</span> run -d -p <span class="number">8080</span>:<span class="number">80</span> docker pull tanyiqu/bluelotus_xss_receiver:latest</span><br></pre></td></tr></table></figure><h3 id="flash钓鱼">flash钓鱼</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:<span class="regexp">//gi</span>thub.com<span class="regexp">/r00tSe7en/</span>Fake-flash.cn</span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:<span class="regexp">//gi</span>thub.com<span class="regexp">/r00tSe7en/</span>Flash-Pop</span><br></pre></td></tr></table></figure><h4 id="Beef">Beef</h4><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> install beef</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;Docker-安装&quot;&gt;Docker 安装&lt;/h3&gt;
+&lt;figure class=&quot;highlight pgsql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ThinkPHP 5.0.23 RCE漏洞</title>
+    <link href="https://495fd.vercel.app/posts/4a17b156.html"/>
+    <id>https://495fd.vercel.app/posts/4a17b156.html</id>
+    <published>2024-04-10T14:16:47.422Z</published>
+    <updated>2024-04-10T14:48:23.654Z</updated>
+    
+    <content type="html"><![CDATA[<p>ThinkPHP 5.0.23 RCE漏洞<br><img src="https://img-blog.csdnimg.cn/20201218100154515.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25xemgwMDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>Vulhub中使用docker开启</p><p>直接上poc</p><p>_method=__construct&amp;filter[]=system&amp;method=get&amp;server[REQUEST_METHOD]=id</p><p>这个id就是想要使用的命令<br><img src="https://img-blog.csdnimg.cn/20201218100433983.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25xemgwMDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>查看到路径后，直接使用echo写入代码<br>echo命令格式为</p><p>echo “内容” &gt; 文件名<br><img src="https://img-blog.csdnimg.cn/20201218100610626.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25xemgwMDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>具体原理不知道，不过，应该是echo的原因，最后使用了`符号（键盘1前面的符号）进行拆解再拼接，写入了shenll<br><img src="https://img-blog.csdnimg.cn/20201218101004128.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25xemgwMDE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;ThinkPHP 5.0.23 RCE漏洞&lt;br&gt;
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20201218100154515.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVp</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>rsa小指数e攻击</title>
     <link href="https://495fd.vercel.app/posts/4a17b156.html"/>
     <id>https://495fd.vercel.app/posts/4a17b156.html</id>
     <published>2024-01-29T14:52:14.900Z</published>
     <updated>2024-01-29T14:52:36.631Z</updated>
     
-    <content type="html"><![CDATA[<p>from Crypto.Util.number import *<br>import gmpy2<br>flag = 25166751653530941364839663846806543387720865339263370907985655775152187319464715737116599171477207047430065345882626259880756839094179627032623895330242655333<br>e = 2</p><h1 id="e从2开始遍历，随便找一个较小的值，我这里取的是2-6。运行找到可以开e次方的flag，并得到其结果"><a href="#e从2开始遍历，随便找一个较小的值，我这里取的是2-6。运行找到可以开e次方的flag，并得到其结果" class="headerlink" title="e从2开始遍历，随便找一个较小的值，我这里取的是2**6。运行找到可以开e次方的flag，并得到其结果"></a>e从2开始遍历，随便找一个较小的值，我这里取的是2**6。运行找到可以开e次方的flag，并得到其结果</h1><p>while(e &lt; 2**6):<br>    e += 1<br>    print(gmpy2.iroot(flag , e))     </p>]]></content>
+    <content type="html"><![CDATA[<p>from Crypto.Util.number import *<br>import gmpy2<br>flag = 25166751653530941364839663846806543387720865339263370907985655775152187319464715737116599171477207047430065345882626259880756839094179627032623895330242655333<br>e = 2</p><h1>e从2开始遍历，随便找一个较小的值，我这里取的是2**6。运行找到可以开e次方的flag，并得到其结果</h1><p>while(e &lt; 2**6):<br>e += 1<br>print(gmpy2.iroot(flag , e))</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;from Crypto.Util.number import *&lt;br&gt;import gmpy2&lt;br&gt;flag = 251667516535309413648396638468065433877208653392633709079856557751521873194647</summary>
+    <summary type="html">&lt;p&gt;from Crypto.Util.number import *&lt;br&gt;
+import gmpy2&lt;br&gt;
+flag = 2516675165353094136483966384680654338772086533926337090798565577515218731946</summary>
       
     
     
